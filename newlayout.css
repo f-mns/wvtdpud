@@ -12,14 +12,51 @@ body {
          background-image: url("struktur.jpg");
          background-size:cover;
          background-color: #333333;
-         padding: 10px 30 30 10;
+         margin:0;
+         padding:0;
 }
 a {
   text-decoration: none;
   font-size: 18px;
 }
 
+/* Überschrift */
+.heading {
+  height: 40%;
+  background-color:#9ab364;
+  display: flex;
+  position: relative;
+}
+.image {
+  width: 40%;
+  height: 100%;
+  background-size:cover;
+  background-image: url(1111.avif);
+
+}
+.text {
+  color:#f0f0f0;
+  margin-right: 6%;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+  font-size: 22px;
+  position: relative;
+  width: 60%;
+  font-family: 'Avenir Light';
+}
+
 /* INHALT */
+p {
+  width: 500px;
+  column-width: 200px;
+}
+
+.inhalt{
+  width: 100%;
+  height: 100%;
+}
+
 /* h1 {
   background-color: #333;
   color: white;
@@ -33,20 +70,7 @@ a {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 } */
 
-h1 {
-  padding-left: 15px;
-  padding-top: 15px;
-  color: white;
-  text-align: center;
-}
-p {
-  padding-left: 15px;
-  padding-bottom: 15px;
-  color: white;
-  text-align: justify;
-  margin: 0px 20% 0 20%;
-  line-height: 1.35em;
-}
+
 hr {
   width: 70%;
 }
@@ -74,21 +98,21 @@ hr {
 
 /* NAVIGATION */
 .items {
-  text-align: center;
+  text-align: right;
   text-decoration-line: line-through;
   text-decoration-thickness: 10px;
   text-decoration-color: #04AA6D;
+  margin: 0px 100 0 0;
 }
 
 .nav {
-  background-color: #333;
-  border-radius: 15px;
-  margin: 30px 0 0 0;
+  background-color: #d4d4d4;
+  border: 0;
 }
 
 .nav a {
   float: left;
-  color: #f2f2f2;
+  color: #d4d4d4;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -113,7 +137,7 @@ hr {
 /* DROPDOWN MENU NAV */
 .dropbtn {
   background-color: transparent;
-  color: white;
+  color: rgb(41, 41, 41);
   padding: 16px;
   border: none;
   border-radius: 15px;
@@ -146,6 +170,8 @@ hr {
   color: white;
   height: auto;
   transition: all .5s;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .dropdown-content a:hover {
@@ -161,7 +187,8 @@ hr {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: rgb(0, 0, 0);
+  background-color: #7c7c7c;
+  transition: all 0.8s ease-in-out;
 }
 
 .blocked
