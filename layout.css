@@ -14,7 +14,9 @@ body {
   background-color: #333333;
   margin:0;
   padding:0;
+  cursor: url(cursor.png);
 }
+
 a {
 text-decoration: none;
 font-size: 18px;
@@ -47,6 +49,20 @@ width: 60%;
 font-family: 'Avenir Light';
 }
 
+
+/* WORKSHOP STREIFEN */
+.stripnormal {
+  width: 5%;
+  transition: all 2s;
+  float: left;
+  margin: auto;
+  padding: 10px;
+  height: 80%;
+  display: flex; /* Add Flexbox */
+  justify-content: left; /* Center horizontally */
+  align-items: left; /* Center vertically */
+}
+
 .strip {
 width: 5%;
 transition: all 2s;
@@ -62,6 +78,7 @@ align-items: left; /* Center vertically */
 .strip:hover {
 width: 50%;
 }
+
 .strip:hover {
 transition: all 2s;
 }
@@ -69,9 +86,8 @@ transition: all 2s;
 .strip .phead {
 writing-mode: vertical-lr;
 transform: rotate(-180deg);
-margin: 0; /* Remove auto margin */
+margin: 0;
 text-align: center;
-/* Add text color for better visibility */
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 letter-spacing: 3;
 font-size: 30px;
@@ -93,6 +109,7 @@ margin: auto;
 text-align: center;
 color: white;
 }
+
 
 
 /* INHALT */
@@ -118,7 +135,7 @@ padding: 10px;
 text-align: left;
 vertical-align: middle;
 color:#f0f0f0;
-font-family: 'Avenir Light';
+font-family: 'Avenir Light', sans-serif;
 }
 
 .inhalt{
@@ -127,37 +144,7 @@ width: 100%;
 height: 30%;
 }
 
-/* h1 {
-background-color: #333;
-color: white;
-width: 80%;
-border-width: 10px;
-border-radius: 25px;
-margin: auto;
-margin-top: 10px;
-text-align: center;
-padding: 10px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-} */
 
-
-
-
-/*p {
-text-align: justify;
-border: none;
-width: 95%;
-border-width: 10px;
-border-radius: 25px;
-width: 100%;
-margin: auto;
-margin-top: 10px;
-width: 95%;
-padding: 10px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-background-color: #0000003f;
-color: white;
-} */
 
 /* NAVIGATION */
 .items {
@@ -197,7 +184,7 @@ border-radius: 15px;
 border-radius: 15px;
 position: relative;
 display: inline-block;
-margin: 3px 2px 0px 5%;
+margin: 3px 2px 0px 6%;
 }
 
 
@@ -259,16 +246,4 @@ animation: fadeIn .6s;
 .dropdown:hover .dropbtn {
 background-color: #7c7c7c;
 transition: all 0.2s ease-in-out;
-}
-
-.blocked
-{
-pointer-events: none;
-}
-
-.logo {
-float: right;
-width: 25px;
-margin: 13px 15px 0 0;
-border-radius: 25px;
 }
