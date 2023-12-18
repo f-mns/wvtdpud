@@ -1,51 +1,41 @@
-#kopf {
-  background-color: black;
-  border-style: solid;
-  border-width: 10px;
-  border-radius: 25px;
-}
-.link {
-  color: white;
-}
 body {
-  font-family: Arial;
-  background-image: url("struktur.jpg");
-  background-size:cover;
-  background-color: #333333;
-  margin:0;
-  padding:0;
-  cursor: url('https://images.vexels.com/media/users/3/129243/isolated/preview/90efd6e2399b88351ac851f76ebd678b-pfeilcursor.png'), auto;
+  font-family: Arial; /* Schrift */
+  background-image: url("struktur.jpg"); /* Hintergrundbild */
+  background-size:cover; /* Hintergrundbildgröße */
+  background-color: #333333; /* Hintergrundfarbe */
+  margin:0; /* Außenabstand */
+  padding:0; /* Innenabstand */
 }
 
 a {
-text-decoration: none;
-font-size: 18px;
+  text-decoration: none; /* Links sind nicht unterstrichen */
+  font-size: 18px; /* Schriftgröße */
 }
 
 /* Überschrift */
 .heading {
-height: 320px;
-margin-top: 100px;
-background-color:#9ab364;
-display: flex;
-position: relative;
+height: 320px; /* Höhe */
+margin-top: 100px; /* Außenabstand oben */
+background-color:#9ab364; /* Hintergrundfarbe */
+display: flex; /* Box-Typ */
+position: relative; /* Position */
 }
 .image {
-  width: 35%;
-  height: auto;
-  background-size:cover;
-  text-align: left;
+  width: 35%; /* Breite */
+  height: auto; 
+  background-size:cover; /* Hintergrundgröße */
+  text-align: left; /* Text ist Linksbündig */
 }
 .image a {
-  display: flex;
-  color: #ddd;
-  font-size: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
+  display: flex; /* Flexible box */
+  color: #ddd; /* Schriftfarbe */
+  font-size: 10px; 
+  padding-top: 10px; /* Innenabstand oben */
+  padding-left: 10px; /* Innenabstand links  */
 }
 
 .text {
-color:#f0f0f0;
+color:#f0f0f0; /* Schriftfarbe */
 margin-right: 6%;
 margin-top: auto;
 margin-bottom: auto;
@@ -60,12 +50,12 @@ font-family: 'Avenir Light';
 /* WORKSHOP STREIFEN */
 .stripnormal {
   width: 5%;
-  transition: all 2s;
-  float: left;
+  transition: all 2s; /* Animierter Übergang */
+  float: left; /* Ausrichtung */
   margin: auto;
   padding: 10px;
   height: 80%;
-  display: flex; /* Add Flexbox */
+  display: flex; 
 }
 
 .strip {
@@ -75,39 +65,36 @@ float: left;
 margin: auto;
 padding: 10px;
 height: 80%;
-display: flex; /* Add Flexbox */
+display: flex;
 }
 
 .strip:hover {
-width: 30%;
-}
-
-.strip:hover {
-transition: all 2s;
+  width: 30%;
+  transition: all 2s;
 }
 
 .strip .phead {
-writing-mode: vertical-lr;
-transform: rotate(-180deg);
+writing-mode: vertical-lr; /* Schreibt vertikal */
+transform: rotate(-180deg); /* Dreht den Text */
 margin: 0;
 text-align: center;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-letter-spacing: 6px;
+letter-spacing: 6px; /* Abstand einzelner Buchstaben */
 font-size: 30px;
 color: white;
 margin-left: 20px;
 }
 
 .strip:hover .ptext {
-opacity: 1;
+opacity: 1; /* Sichtbarkeit */
 }
 
 .ptext {
 transition: all 1s;
 opacity: 0;
-display: flex; /* Add Flexbox */
-justify-content: center; /* Center horizontally */
-align-items: center; /* Center vertically */
+display: flex; 
+justify-content: center; /* Horizontal im Zentrum */
+align-items: center; /* Vertikal im Zentrum */
 margin: auto;
 text-align: center;
 color: white;
@@ -121,26 +108,25 @@ color: white;
   color:#f0f0f0;
   margin: auto;
   padding: 10px;
-  font-size: 22px;
+  text-align: left;
+  vertical-align: middle; /* Vertikale Ausrichtung */
+  background-color: #3535354d;
+  box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2); /* Schatten */
+  font-size: 18px;
+}
+
+.inhalt p, .container {
+  width: 90%;
+  column-width: 400px; /* Spaltenbreite */
+  column-gap: 100px; /* Spaltenbreitengröße */
+  color:#f0f0f0;
+  margin: auto;
+  padding: 10px;
   text-align: left;
   vertical-align: middle;
   background-color: #3535354d;
   box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
   font-size: 18px;
-}
-
-.inhalt p, .container {
-width: 90%;
-column-width: 400px;
-column-gap: 100px;
-color:#f0f0f0;
-margin: auto;
-padding: 10px;
-text-align: left;
-vertical-align: middle;
-background-color: #3535354d;
-box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
-font-size: 18px;
 }
 
 h1 {
@@ -178,7 +164,7 @@ background-color: #d4d4d4;
 margin-top: -100px;
 border: 0;
 position: fixed;
-z-index: 99;
+z-index: 99; /* Welches Element im Vordergrund und im Hintergrund ist */
 width: 100%;
 }
 
@@ -235,7 +221,7 @@ margin: 2px 2px 2px 2px;
 .dropdown-content {
 display: none;
 position: absolute;
-width: 30px; /* Adjust the width as needed */
+width: 30px;
 z-index: 1;
 border-radius: 15px;
 
@@ -251,7 +237,7 @@ width: 600%;
 color: white;
 height: auto;
 transition: all .5s;
-transition-timing-function: ease;
+transition-timing-function: ease; /* Typ des Übergangs */
 text-align: left;
 }
 
@@ -262,9 +248,10 @@ width: 700%;
 
 .dropdown:hover .dropdown-content {
 display: block;
-animation: fadeIn .6s;
+animation: fadeIn .6s; /* Einblende Animation */
 
 }
+
 @keyframes fadeIn {
 0% { opacity: 0; }
 100% { opacity: 1; }
